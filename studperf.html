@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML MODEL DEPLOYMENT</title>
+</head>
+<body>
+    <h1 class="number-center">STUDENT PERFORMANCE</h1>
+    <form class="p-3 number-center" action='/' method="post">
+
+        <label for="anxiety_level">Anxiety Level(1-5): </label>
+        <input class="form-control" type="number" name="anxiety_level" id="anxiety_level">
+<br><br>
+        <label for="self_esteem">Self Esteem(1-5): </label>
+        <input class="form-control" type="number" name="self_esteem" id="self_esteem">
+<br><br>
+        <label for="mental_health_history">Mental Health History(0 or 1): </label>
+        <input class="form-control" type="number" name="mental_health_history" id="mental_health_history">
+<br><br>
+        <label for="depression">Depression(1-5): </label>
+        <input class="form-control" type="number" name="depression" id="depression">
+<br><br>
+        <label for="headache">Headache(1-5): </label> <!-- Updated label -->
+        <input class="form-control" type="number" name="headache" id="headache"> <!-- Updated id -->
+        <br><br>
+        <label for="blood_pressure">Blood Pressure(1-5): </label>
+        <input class="form-control" type="number" name="blood_pressure" id="blood_pressure">
+<br><br>
+
+<br><br>
+        <label for="sleep_quality">Sleep Quality(1-5): </label>
+        <input class="form-control" type="number" name="sleep_quality" id="sleep_quality">
+<br><br>
+
+<br><br>
+        <label for="noise_level">Noise Level(1-5): </label>
+        <input class="form-control" type="number" name="noise_level" id="noise_level">
+<br><br>
+
+<br><br>
+        <label for="safety">Safety(1-5): </label>
+        <input class="form-control" type="number" name="safety" id="safety">
+<br><br>
+
+<br><br>
+        <label for="basic_needs">Basic Needs(1-5): </label>
+        <input class="form-control" type="number" name="basic_needs" id="basic_needs">
+<br><br>
+
+<br><br>
+        <label for="teacher_student_relationship">Teacher Student Relationship(1-5): </label>
+        <input class="form-control" type="number" name="teacher_student_relationship" id="teacher_student_relationship">
+<br><br>
+
+<br><br>
+        <label for="future_career_concerns">Future Career Concerns(1-5): </label>
+        <input class="form-control" type="number" name="future_career_concerns" id="future_career_concerns">
+<br><br>
+
+<br><br>
+        <label for="social_support">Social Support(1-5): </label>
+        <input class="form-control" type="number" name="social_support" id="social_support">
+<br><br>
+
+<br><br>
+        <label for="peer_pressure">Peer Pressure(1-5): </label>
+        <input class="form-control" type="number" name="peer_pressure" id="peer_pressure">
+<br><br>
+
+<br><br>
+        <label for="extracurricular_activities">Extra Curricular Activities(1-5): </label>
+        <input class="form-control" type="number" name="extracurricular_activities" id="extracurricular_activities">
+<br><br>
+
+<label for="bullying">Bullying(1-5): </label>
+        <input class="form-control" type="number" name="bullying" id="bullying">
+<br><br>
+        <!-- Include other input fields here -->
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="output">
+        <h2>Output</h2>
+        <p>Academic Performance: {{ academic_performance_prediction }}</p>
+        <p>Stress Level: {{ stress_level_prediction }}</p>        
+    </div>
+</body>
+</html>
